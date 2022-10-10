@@ -1,9 +1,6 @@
 const usuario = "jogador@poke.com"
 const senha = "123456"
 
-
-
-
 function verificaUsuario(){
 
 let emailInput = document.getElementById("id-email")
@@ -20,9 +17,4 @@ console.log(senhaValue)
          alert("Usuário ou senha inválido")
     }
 
-    // if (usuario === usuario && senha === senha){
-    //     alert("Seja bem vindo!")
-    // }else{
-    //      alert("Usuário ou senha inválido")
-    // }
 }
