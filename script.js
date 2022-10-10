@@ -1,18 +1,28 @@
 const usuario = "jogador@poke.com"
-const senha = 123456
+const senha = "123456"
 
-const emailUsuario = document.getElementById("id-email")
-const senhaUsuario = document.getElementById("id-senha")
-const digitado = emailUsuario.value
 
 
 
 function verificaUsuario(){
-    alert(digitado)
-    
-    // if (emailUsuario.value === usuario && senhaUsuario.value === senha){
+
+let emailInput = document.getElementById("id-email")
+let senhaInput = document.getElementById("id-senha")
+let emailValue = emailInput.value
+let senhaValue = senhaInput.value
+
+console.log(emailValue)
+console.log(senhaValue)
+
+    if (emailValue === usuario && senhaValue === senha){
+        alert("Seja bem vindo!")
+    }else{
+         alert("Usuário ou senha inválido")
+    }
+
+    // if (usuario === usuario && senha === senha){
     //     alert("Seja bem vindo!")
     // }else{
-    //     alert("Usuário ou senha inválido")
+    //      alert("Usuário ou senha inválido")
     // }
 }
